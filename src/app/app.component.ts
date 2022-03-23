@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient) {
     // this.listData.background = 'green';
     // this.listData.usersArray = this.users;
-    this.listData = { background: 'green', usersArray: this.users };
+    this.listData = { background: 'lightblue', usersArray: this.users };
   }
 
   ngOnInit(): void {

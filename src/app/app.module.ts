@@ -7,13 +7,19 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './components/list/list.component';
 import { ButtonComponent } from './components/button/button.component';
 import { CapitalizeFirstPipe } from './pipes/capitalize-first.pipe';
+import { OrderByRankingPipe } from './pipes/order-by-ranking.pipe';
+import { OrderByParamPipe } from './pipes/order-by-param.pipe';
+import { OrderByNumberPipe } from './pipes/order-by-number.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     ButtonComponent,
-    CapitalizeFirstPipe
+    CapitalizeFirstPipe,
+    OrderByRankingPipe,
+    OrderByParamPipe,
+    OrderByNumberPipe
   ],
   imports: [
     BrowserModule,
