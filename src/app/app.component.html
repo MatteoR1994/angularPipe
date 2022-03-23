@@ -1,0 +1,12 @@
+<h1>Angular Pipe</h1>
+
+<app-list 
+[userList]="listData.usersArray"
+[listBackgroundColor]="listData.background"></app-list>
+
+<app-button 
+(arrayChanged)="onArrayChanged($event)" 
+(userAdded)="onUserAdded($event)"
+(userChanged)="onUserChanged()"></app-button>
+
+<router-outlet></router-outlet>
