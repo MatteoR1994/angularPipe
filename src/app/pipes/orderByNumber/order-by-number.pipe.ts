@@ -7,18 +7,17 @@ import { Car } from '../../model/cars';
 export class OrderByNumberPipe implements PipeTransform {
 
   transform(value: any[], ...args: string[]): any[] {    
-    const arg = args[0];    
-    const newArray = [...value];
+    const arg = args[0];
     const firstElement = value[0];
     if (Object.prototype.hasOwnProperty.call(firstElement, arg)) {
       const typeOfProperty = typeof firstElement[arg];      
       if (typeOfProperty === 'number') {
-        return newArray.sort((el1, el2) => this.compareByNumber(el1, el2, arg));
+        return value.sort((el1, el2) => this.compareByNumber(el1, el2, arg));
       } else {
-        return newArray;
+        return value;
       }
     } else {
-      return newArray;
+      return value;
     }
   }
 

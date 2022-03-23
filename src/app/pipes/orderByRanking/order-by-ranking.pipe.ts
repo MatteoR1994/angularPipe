@@ -7,8 +7,7 @@ import { User } from '../../model/user';
 export class OrderByRankingPipe implements PipeTransform {
 
   transform(value: User[], ...args: unknown[]): User[] {
-    const newArray = [...value];
-    return newArray.sort(this.compareUsers);
+    return value.sort(this.compareUsers);
   }
 
   compareUsers(user1: User, user2: User): number {

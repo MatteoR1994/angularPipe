@@ -8,11 +8,10 @@ export class OrderByParamPipe implements PipeTransform {
 
   transform(value: User[], ...args: string[]): User[] {
     const arg = args[0];
-    const newArray = [...value];
     if (arg.toLowerCase() === 'name') {
-      return newArray.sort(this.compareByName);
+      return value.sort(this.compareByName);
     }
-    return newArray.sort(this.compareByRanking);
+    return value.sort(this.compareByRanking);
   }
 
   compareByName(user1: User, user2: User) {
