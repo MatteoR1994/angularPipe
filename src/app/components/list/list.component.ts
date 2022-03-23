@@ -17,4 +17,14 @@ export class ListComponent implements OnInit {
     console.log('ciao');    
   }
 
+  capitalizeFirst(word: string): string {
+    console.log('pippo');
+    
+
+    const firstChar = word[0];
+    const upperFirst = firstChar.toUpperCase();
+    const remainingChars = word.slice(1);
+    return upperFirst + remainingChars;
+  }
+
 }

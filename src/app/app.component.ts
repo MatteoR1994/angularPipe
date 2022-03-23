@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 import { User } from './model/user';
 
 @Component({
@@ -6,24 +7,24 @@ import { User } from './model/user';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'angularPipe';
 
-  public users: User[] = [
-    { name: 'fjoralba', ranking: 1 },
-    { name: 'simone', ranking: 5 },
-    { name: 'matteo', ranking: 4 },
-    { name: 'marco', ranking: 3 },
-    { name: 'lorenzo', ranking: 2 },
-    { name: 'alessandro', ranking: 7 },
-    { name: 'andrea', ranking: 6 }
-  ];
+  public users: User[] = [];
 
   public listData: any = {};
 
-  constructor() {
-    this.listData.background = 'green';
-    this.listData.usersArray = this.users;
+  constructor(private http: HttpClient) {
+    // this.listData.background = 'green';
+    // this.listData.usersArray = this.users;
+    this.listData = { background: 'green', usersArray: this.users };
+  }
+
+  ngOnInit(): void {
+    this.http.get<User[]>('./assets/users.json').subscribe(users => {
+      this.users = users;
+      this.listData.usersArray = this.users;
+    });
   }
 
   onArrayChanged(usersArray: User[]) {
