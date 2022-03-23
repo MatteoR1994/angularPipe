@@ -12,22 +12,10 @@ export class ListComponent implements OnInit {
   @Input() public listBackgroundColor: string = 'tomato';
 
   public cars: Car[] = [
-    {
-      name: 'punto',
-      displacement: 1300,
-    },
-    {
-      name: 'alfa romeo',
-      displacement: 1900,
-    },
-    {
-      name: 'panda',
-      displacement: 1200,
-    },
-    {
-      name: 'seicento',
-      displacement: 1100,
-    },
+    { name: 'punto', displacement: 1300 },
+    { name: 'alfa romeo', displacement: 1900 },
+    { name: 'panda', displacement: 1200 },
+    { name: 'seicento', displacement: 1100 },
   ];
 
   constructor() {}

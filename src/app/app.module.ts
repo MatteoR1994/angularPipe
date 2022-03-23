@@ -6,10 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListComponent } from './components/list/list.component';
 import { ButtonComponent } from './components/button/button.component';
-import { CapitalizeFirstPipe } from './pipes/capitalize-first.pipe';
-import { OrderByRankingPipe } from './pipes/order-by-ranking.pipe';
-import { OrderByParamPipe } from './pipes/order-by-param.pipe';
-import { OrderByNumberPipe } from './pipes/order-by-number.pipe';
+import { CapitalizeFirstPipe } from './pipes/capitalizeFirst/capitalize-first.pipe';
+import { OrderByRankingPipe } from './pipes/orderByRanking/order-by-ranking.pipe';
+import { OrderByParamPipe } from './pipes/orderByParam/order-by-param.pipe';
+import { OrderByNumberPipe } from './pipes/orderByNumber/order-by-number.pipe';
 
 @NgModule({
   declarations: [

@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Car } from '../model/cars';
+import { Car } from '../../model/cars';
 
 @Pipe({
   name: 'orderByNumber'
