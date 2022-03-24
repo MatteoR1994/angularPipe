@@ -2,6 +2,11 @@
 
 <h1 [appBackground]="titleColor" appBackgroundTextColor="lightblue">Angular Pipe</h1>
 
+<h2 [appExists]="isVisible">Titolo 2</h2>
+
+<a appBackground="orange" appElementSizing="block" appElementSizingWidth="100px" appElementSizingHeight="30px" href="#">Lin 1</a>
+<a appBackground="lightgreen" appElementSizing="block" appElementSizingWidth="50px" appElementSizingHeight="50px" href="#">Lin 2</a>
+
 <app-list 
 [userList]="listData.usersArray"
 [listBackgroundColor]="listData.background"></app-list>

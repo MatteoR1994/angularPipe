@@ -11,6 +11,8 @@ import { BlackBackgroundDirective } from './directives/black-background.directiv
 import { BackgroundDirective } from './directives/background.directive';
 import { ListModule } from './components/list/module/list.module';
 import { SharedModule } from './shared/shared.module';
+import { ElementSizingDirective } from './directives/element-sizing.directive';
+import { ExistsDirective } from './directives/exists.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { SharedModule } from './shared/shared.module';
     OrderByRankingPipe,
     OrderByParamPipe,
     BlackBackgroundDirective,
-    BackgroundDirective
+    BackgroundDirective,
+    ElementSizingDirective,
+    ExistsDirective
   ],
   imports: [
     BrowserModule,

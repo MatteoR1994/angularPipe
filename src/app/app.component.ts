@@ -16,6 +16,8 @@ export class AppComponent implements OnInit {
 
   public titleColor: string = 'yellow';
 
+  public isVisible = true;
+
   constructor(private http: HttpClient) {
     // this.listData.background = 'green';
     // this.listData.usersArray = this.users;
