@@ -10,6 +10,8 @@ import { CapitalizeFirstPipe } from './pipes/capitalizeFirst/capitalize-first.pi
 import { OrderByRankingPipe } from './pipes/orderByRanking/order-by-ranking.pipe';
 import { OrderByParamPipe } from './pipes/orderByParam/order-by-param.pipe';
 import { OrderByNumberPipe } from './pipes/orderByNumber/order-by-number.pipe';
+import { BlackBackgroundDirective } from './directives/black-background.directive';
+import { BackgroundDirective } from './directives/background.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { OrderByNumberPipe } from './pipes/orderByNumber/order-by-number.pipe';
     CapitalizeFirstPipe,
     OrderByRankingPipe,
     OrderByParamPipe,
-    OrderByNumberPipe
+    OrderByNumberPipe,
+    BlackBackgroundDirective,
+    BackgroundDirective
   ],
   imports: [
     BrowserModule,

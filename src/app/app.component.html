@@ -1,4 +1,6 @@
-<h1>Angular Pipe</h1>
+<!-- <h1 appBlackBackground>Angular Pipe</h1> -->
+
+<h1 [appBackground]="titleColor" appBackgroundTextColor="lightblue">Angular Pipe</h1>
 
 <app-list 
 [userList]="listData.usersArray"
@@ -10,3 +12,9 @@
 (userChanged)="onUserChanged()"></app-button>
 
 <router-outlet></router-outlet>
+
+
+1 - direttiva che di default mette block, gli si può passare inline-block, e width e height
+
+
+2 - direttiva che simula ngIf, se passo true esiste, se passo false non esiste
