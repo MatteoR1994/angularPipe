@@ -10,6 +10,7 @@ import { OrderByParamPipe } from './pipes/orderByParam/order-by-param.pipe';
 import { BlackBackgroundDirective } from './directives/black-background.directive';
 import { BackgroundDirective } from './directives/background.directive';
 import { ListModule } from './components/list/module/list.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ListModule } from './components/list/module/list.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ListModule
+    ListModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
